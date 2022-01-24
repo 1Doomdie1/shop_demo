@@ -9,9 +9,19 @@ class Order:
     def __save_order(self, order_data):
         with open('orders/history/orders_history.json', 'r+') as history_file:
             data = json.load(history_file)
-            data.append(order_data)
+            has_older_order, order_index = self.__check_client_old_orders(data)
+            if has_older_order:
+                data[order_index]['Orders'].append(order_data['Orders'])
+            else:
+                data.append(order_data)
             history_file.seek(0)
             json.dump(data, history_file, indent=1)
+
+    def __check_client_old_orders(self, data):
+        for i in data:
+            if i["Client ID"] == self.__client_data.get_id():
+                return True, data.index(i)
+        return False, None
 
     def get_client_data(self):
         return self.__client_data

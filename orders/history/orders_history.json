@@ -19,7 +19,70 @@
      "Milk"
     ],
     "Total": 25
-   }
+   },
+   [
+    {
+     "Order ID": 170161343609,
+     "Name": "Doomdie",
+     "Address": {
+      "City/Town": "London",
+      "Postcode": 12345,
+      "Street Name": "London Bridge",
+      "Street Number": 1,
+      "Block Number": 12,
+      "Floor": 1,
+      "Apartment": 20
+     },
+     "Products": [
+      "Vanila Ice cream",
+      "Milk"
+     ],
+     "Total": 25
+    }
+   ]
+  ]
+ },
+ {
+  "Client ID": 1234,
+  "Orders": [
+   {
+    "Order ID": 151363726466,
+    "Name": "Doomdie",
+    "Address": {
+     "City/Town": "London",
+     "Postcode": 12345,
+     "Street Name": "London Bridge",
+     "Street Number": 1,
+     "Block Number": 12,
+     "Floor": 1,
+     "Apartment": 20
+    },
+    "Products": [
+     "Vanila Ice cream",
+     "Milk"
+    ],
+    "Total": 25
+   },
+   [
+    {
+     "Order ID": 133536814276,
+     "Name": "Doomdie",
+     "Address": {
+      "City/Town": "London",
+      "Postcode": 12345,
+      "Street Name": "London Bridge",
+      "Street Number": 1,
+      "Block Number": 12,
+      "Floor": 1,
+      "Apartment": 20
+     },
+     "Products": [
+      "Vanila Ice cream",
+      "Milk"
+     ],
+     "Total": 25
+    }
+   ]
   ]
  }
 ]
