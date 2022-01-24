@@ -31,4 +31,5 @@ class Order:
         addr = self.__client_data.get_address()
         return f'[+] Name: {self.__client_data.get_name()}\n'\
                 f'[+] Address: {addr["City/Town"]}, pc. {addr["Postcode"]}, {addr["Street Name"]} nr. {addr["Street Number"]}, bl. {addr["Block Number"]}, fl. {addr["Floor"]}, ap. {addr["Apartment"]}\n'\
-                f'[+] Ordered Products: {self.get_bucket_list()}'
+                f'[+] Ordered Products: {self.get_bucket_list()}\n'\
+                f'[+] Total: {self.total_cost()}£'
