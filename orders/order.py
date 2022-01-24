@@ -11,7 +11,7 @@ class Order:
             data = json.load(history_file)
             has_older_order, order_index = self.__check_client_old_orders(data)
             if has_older_order:
-                data[order_index]['Orders'].append(order_data['Orders'])
+                data[order_index]['Orders'].append(order_data['Orders'][0])
             else:
                 data.append(order_data)
             history_file.seek(0)

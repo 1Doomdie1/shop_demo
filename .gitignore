@@ -1,4 +1,5 @@
 *.txt
+test.py
 __pycache__
 orders/__pycache__
 clients/__pycache__
