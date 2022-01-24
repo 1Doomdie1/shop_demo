@@ -1,0 +1,5 @@
+*.txt
+__pycache__
+orders/__pycache__
+clients/__pycache__
+products_categories/__pycache__
