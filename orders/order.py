@@ -11,16 +11,16 @@ class Order:
             data = json.load(history_file)
             has_older_order, order_index = self.__check_client_old_orders(data)
             if has_older_order:
-                data[order_index]['Orders'].append(order_data['Orders'][0])
+                data[order_index]['Orders'] += order_data['Orders']
             else:
                 data.append(order_data)
             history_file.seek(0)
             json.dump(data, history_file, indent=1)
 
-    def __check_client_old_orders(self, data):
-        for i in data:
-            if i["Client ID"] == self.__client_data.get_id():
-                return True, data.index(i)
+    def __check_client_old_orders(self, orders):
+        for order in orders:
+            if order["Client ID"] == self.__client_data.get_id():
+                return True, orders.index(order)
         return False, None
 
     def get_client_data(self):
