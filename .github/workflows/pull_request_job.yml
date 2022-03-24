@@ -11,11 +11,11 @@ jobs:
       - name: Checks
         uses: actions/checkout@v2
         with:
-          path: contributor-automations
+          path: shop_demo
           persist-credentials: false
       - name: Labeling and Linking
         run: |
-          cd contributor-automations
+          cd shop_demo
           echo "$PR_ID""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
