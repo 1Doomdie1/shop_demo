@@ -4,8 +4,8 @@ from products_categories import *
 
 
 def main():
-    cl1_addr = Address('London', 12345, 'London Bridge', 1, 12, 1, 20)
-    cl1 = Client(61253, 'Doomdie', cl1_addr)
+#     cl1_addr = Address('London', 12345, 'London Bridge', 1, 12, 1, 20)
+#     cl1 = Client(61253, 'Doomdie', cl1_addr)
 
     cl2_addr = Address('London', 12345, 'London Bridge', 1, 12, 1, 20)
     cl2 = Client(1234, 'Doomdie', cl2_addr)
