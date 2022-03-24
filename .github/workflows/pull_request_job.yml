@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  pull_request_labeling_linking:
+    name: PR Labeling and Linking
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checks
+        uses: actions/checkout@v2
+        with:
+          path: contributor-automations
+          persist-credentials: false
+      - name: Labeling and Linking
+        run: |
+          cd shop_demo
+          echo "$PR_ID""
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_ID: ${{ github.event.pull_request.number }}
