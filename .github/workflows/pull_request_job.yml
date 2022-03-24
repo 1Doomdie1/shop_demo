@@ -1,6 +1,6 @@
 on:
   pull_request:
-    types: [opened]
+    types: [created]
 
 jobs:
   pull_request_labeling_linking:
