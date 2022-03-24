@@ -10,7 +10,7 @@ jobs:
       - name: Checks
         uses: actions/checkout@v2
         with:
-          path: contributor-automations
+          path: shop_demo
           persist-credentials: false
       - name: Labeling and Linking
         run: |
