@@ -5,16 +5,17 @@ on:
 jobs:
   pull_request_labeling_linking:
     name: PR Labeling and Linking
+    if: ${{ github.event.pull_request }}
     runs-on: ubuntu-latest
     steps:
       - name: Checks
         uses: actions/checkout@v2
         with:
-          path: shop_demo
+          path: contributor-automations
           persist-credentials: false
       - name: Labeling and Linking
         run: |
-          cd shop_demo
+          cd contributor-automations
           echo "$PR_ID""
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
