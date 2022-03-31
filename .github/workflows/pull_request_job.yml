@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: Checks
         uses: actions/checkout@v2
-<<<<<<< HEAD
         with:
           path: shop_demo
           persist-credentials: false
@@ -22,5 +21,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_ID: ${{ github.event.pull_request.number }}
-=======
->>>>>>> b93e12e8f9b7b14282641ad83851e3f42f2aafd5
