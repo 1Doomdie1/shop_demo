@@ -13,9 +13,9 @@ def main():
     milk = Milk('Milk', 10, 2345, '1.5L', 12, "12.12.2022")
     ice_cream = Ice_cream('Vanila Ice cream', 15, 5654, '300g', '12.12.2022')
 
-    products = [ice_cream, milk]
-    bucket_lst = Bucket_list(products)
-    order = Order(cl2, bucket_lst)
+#     products = [ice_cream, milk]
+#     bucket_lst = Bucket_list(products)
+#     order = Order(cl2, bucket_lst)
     order.archive_order()
 
 
