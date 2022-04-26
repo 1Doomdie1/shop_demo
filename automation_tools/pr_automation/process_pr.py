@@ -29,9 +29,9 @@ class Process_pr():
             exit()
 
     def assign_intern(self, ivy_intern):
-        self.command(f"gh pr edit {self.__pr_number} --add-assignee {ivy_intern}", save_output=False)
+        self.command(f'gh pr edit {self.__pr_number} --add-assignee "{ivy_intern}"', save_output=False)
 
     def assign_random_intern(self, intern_list):
         random_intern = rn.choice(intern_list)
-        self.command(f"gh pr edit {self.__pr_number} --add-assignee {random_intern}", save_output=False)
+        self.command(f'gh pr edit {self.__pr_number} --add-assignee "{random_intern}"', save_output=False)
         print(f'[+] {random_intern} was assigned to PR {self.__pr_number}')
