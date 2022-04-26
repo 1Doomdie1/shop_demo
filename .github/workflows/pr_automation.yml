@@ -17,7 +17,6 @@ jobs:
           persist-credentials: false
       - name: Assigning ivy intern
         run: |
-            # ls -la
             cd shop_demo/automation_tools/pr_automation
             python3 pr_action.py $PR_NUMBER "$PR_AUTHOR" 
         env:
