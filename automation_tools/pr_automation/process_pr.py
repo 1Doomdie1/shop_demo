@@ -2,9 +2,10 @@ import os
 import re
 import sys
 import json
-
+import random as rn
 
 # $PR_NUMBER "$PR_AUTHOR" "$GITHUB_TOKEN"
+
 
 class Process_pr():
     def __init__(self, pr_number, pr_author):
