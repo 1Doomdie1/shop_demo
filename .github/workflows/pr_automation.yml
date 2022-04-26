@@ -1,4 +1,4 @@
-name: PR Automation
+name: Ivy PR Automation
 on:
   pull_request:
     types: [opened]
@@ -13,7 +13,7 @@ jobs:
       - name: Checks
         uses: actions/checkout@v2
         with:
-          path: ivy
+          path: shop_demo
           persist-credentials: false
       - name: Assigning ivy intern
         run: |
