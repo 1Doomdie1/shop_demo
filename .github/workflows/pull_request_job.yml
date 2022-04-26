@@ -16,8 +16,7 @@ jobs:
           persist-credentials: false
       - name: Labeling and Linking
         run: |
-          cd shop_demo
-          echo "$PR_ID"
+          echo
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_ID: ${{ github.event.pull_request.number }}
