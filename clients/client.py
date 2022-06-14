@@ -1,5 +1,5 @@
 class Client():
-    def __init__(self, id, name, address):
+    def __init__(self, id: int, name: str, address: str):
         self.__id = id
         self.__name = name
         self.__address = address

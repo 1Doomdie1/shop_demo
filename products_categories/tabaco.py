@@ -2,7 +2,7 @@ from .item import Item
 
 
 class Tabaco(Item):
-    def __init__(self, name, price, IBAN, nicotine):
+    def __init__(self, name: str, price: float, IBAN: int, nicotine: float):
         super().__init__(name, price, IBAN)
         self.__nicotine = nicotine
 

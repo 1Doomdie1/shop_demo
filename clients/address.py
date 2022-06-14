@@ -1,5 +1,5 @@
 class Address():
-    def __init__(self, city_town, postcode, street_name, street_number, block_number, floor, apartment):
+    def __init__(self, city_town: str, postcode: int, street_name: str, street_number: int, block_number: int, floor: int, apartment: int):
         self.__address_data = {"City/Town": city_town, "Postcode": postcode, "Street Name": street_name, "Street Number": street_number, "Block Number": block_number, "Floor": floor, "Apartment": apartment}
 
     def get_address_data(self):

@@ -2,7 +2,7 @@ from .item import Item
 
 
 class Drink(Item):
-    def __init__(self, name, price, IBAN, bottle_size):
+    def __init__(self, name: str, price: float, IBAN: int, bottle_size: float):
         super().__init__(name, price, IBAN)
         self.__bottle_size = bottle_size
 
@@ -10,11 +10,11 @@ class Drink(Item):
         return self.__bottle_size
 
     def __str__(self):
-        return super().__str__() + f'[+] Bottle size: {self.__bottle_size}\n'
+        return super().__str__() + f'[+] Bottle size: {self.__bottle_size}L\n'
 
 
 class Alcohol(Drink):
-    def __init__(self, name, price, IBAN, bottle_size, alcohol_lvl):
+    def __init__(self, name: str, price: float, IBAN: int, bottle_size: float, alcohol_lvl: float):
         super().__init__(name, price, IBAN, bottle_size)
         self.__alcohol_lvl = alcohol_lvl
 
@@ -26,7 +26,7 @@ class Alcohol(Drink):
 
 
 class Non_Alcohol(Drink):
-    def __init__(self, name, price, IBAN, bottle_size, fizzy=False):
+    def __init__(self, name: str, price: float, IBAN: int, bottle_size: float, alcohol_lvl: float, fizzy: bool = False):
         super().__init__(name, price, IBAN, bottle_size)
         self.__fizzy = fizzy
 

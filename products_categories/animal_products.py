@@ -2,7 +2,7 @@ from .item import Item
 
 
 class Animal_products(Item):
-    def __init__(self, name, price, IBAN, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, expiration_date: str):
         super().__init__(name, price, IBAN)
         self.__expiration_date = expiration_date
 
@@ -14,7 +14,7 @@ class Animal_products(Item):
 
 
 class Meat(Animal_products):
-    def __init__(self, name, price, IBAN, quantity, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, quantity: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
         self.__quantity = quantity
 
@@ -26,7 +26,7 @@ class Meat(Animal_products):
 
 
 class Eggs(Animal_products):
-    def __init__(self, name, price, IBAN, inc_type, box_size, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, inc_type: str, box_size: int, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
         self.__inc_type = inc_type
         self.__box_size = box_size
@@ -43,7 +43,7 @@ class Eggs(Animal_products):
 
 
 class Milk(Animal_products):
-    def __init__(self, name, price, IBAN, quantity, fatness, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, quantity: float, fatness: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
         self.__quantity = quantity
         self.__fatness = fatness
@@ -60,7 +60,7 @@ class Milk(Animal_products):
 
 
 class Cheese(Animal_products):
-    def __init__(self, name, price, IBAN, weight, fatness, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, weight: float, fatness: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
         self.__weight = weight
         self.__fatness = fatness
@@ -77,7 +77,7 @@ class Cheese(Animal_products):
 
 
 class Ice_cream(Animal_products):
-    def __init__(self, name, price, IBAN, quantity, expiration_date):
+    def __init__(self, name: str, price: float, IBAN: int, quantity: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
         self.__quantity = quantity
 

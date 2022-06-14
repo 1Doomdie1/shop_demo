@@ -1,5 +1,5 @@
 class Bucket_list():
-    def __init__(self, lst):
+    def __init__(self, lst: list):
         self.__lst = lst
 
     def get_lst(self):
@@ -9,7 +9,7 @@ class Bucket_list():
         return tmp
 
     def cost(self):
-        return sum([i.get_price() for i in self.__lst])
+        return round(sum([i.get_price() for i in self.__lst]), 2)
 
     def remove_item(self, *args):
         items = self.__lst
