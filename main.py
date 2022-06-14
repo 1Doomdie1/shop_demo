@@ -17,8 +17,7 @@ def main():
     products = [ice_cream, milk, cola, cola, milk]
     bucket_lst = Bucket_list(products)
     order = Order(cl2, bucket_lst)
-    print(order.get_client_data().get_address())
-    # order.archive_order()
+    order.archive_order()
 
 
 if __name__ == '__main__':
