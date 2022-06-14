@@ -5,7 +5,7 @@ class Bucket_list():
     def get_lst(self):
         tmp = {}
         for product in set(self.__lst):
-            tmp[product.get_name()] = {'qnt': self.__lst.count(product), 'price': product.get_price() * self.__lst.count(product)}
+            tmp[product.get_name()] = {'qnt': self.__lst.count(product), 'price': product.get_price()}
         return tmp
 
     def cost(self):
