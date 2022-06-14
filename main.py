@@ -13,10 +13,13 @@ def main():
     milk = Milk('Milk', 10, 2345, '1.5L', 12, "12.12.2022")
     ice_cream = Ice_cream('Vanila Ice cream', 15, 5654, '300g', '12.12.2022')
 
-    products = [ice_cream, milk]
+    products = [ice_cream, milk, milk]
     bucket_lst = Bucket_list(products)
-    order = Order(cl2, bucket_lst)
-    print(order)
+    print(bucket_lst)
+    bucket_lst.remove_item(milk)
+    print(bucket_lst)
+    # order = Order(cl2, bucket_lst)
+    # print(order)
     # order.archive_order()
 
 

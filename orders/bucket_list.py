@@ -3,7 +3,10 @@ class Bucket_list():
         self.__lst = lst
 
     def get_lst(self):
-        return [i.get_name() for i in self.__lst]
+        tmp = {}
+        for product in set(self.__lst):
+            tmp[product.get_name()] = {'qnt': self.__lst.count(product), 'price': product.get_price() * self.__lst.count(product)}
+        return tmp
 
     def cost(self):
         return sum([i.get_price() for i in self.__lst])
@@ -14,4 +17,7 @@ class Bucket_list():
             items.remove(item_to_remove)
 
     def __str__(self):
-        return f'[+] Bucket list: {self.get_lst()}'
+        lst = ''
+        for product, qnt in self.get_lst().items():
+            lst += f'{product} x{qnt["qnt"]}, '
+        return f'[+] Bucket list: {lst[:-2]}'
