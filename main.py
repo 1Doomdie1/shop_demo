@@ -16,7 +16,6 @@ def main():
     products = [ice_cream, milk, milk]
     bucket_lst = Bucket_list(products)
     order = Order(cl2, bucket_lst)
-    # print(order)
     order.archive_order()
 
 
