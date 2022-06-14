@@ -14,5 +14,5 @@ class Bakery(Item):
         return self.__expiration_date
 
     def __str__(self):
-        return super().__str__() + f'[+] Quantity: {self.__quantity}\n'\
+        return super().__str__() + f'[+] Quantity: {self.__quantity}kg\n'\
             f'[+] Expiration date: {self.__expiration_date}'

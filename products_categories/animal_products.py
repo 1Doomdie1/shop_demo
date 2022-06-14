@@ -55,24 +55,24 @@ class Milk(Animal_products):
         return self.__fatness
 
     def __str__(self):
-        return super().__str__() + f'[+] Quantity: {self.__quantity}\n'\
+        return super().__str__() + f'[+] Quantity: {self.__quantity}L\n'\
             f'[+] Fatness: {self.__fatness}%'
 
 
 class Cheese(Animal_products):
-    def __init__(self, name: str, price: float, IBAN: int, weight: float, fatness: float, expiration_date: str):
+    def __init__(self, name: str, price: float, IBAN: int, quantity: float, fatness: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
-        self.__weight = weight
+        self.__quantity = quantity
         self.__fatness = fatness
 
-    def get_weight(self):
-        return self.__weight
+    def get_quantity(self):
+        return self.__quantity
 
     def get_fatness(self):
         return self.__fatness
 
     def __str__(self):
-        return super().__str__() + f'[+] Weight: {self.__weight}\n'\
+        return super().__str__() + f'[+] Quantity: {self.__quantity}kg\n'\
             f'[+] Fatness: {self.__fatness}%'
 
 
@@ -85,4 +85,4 @@ class Ice_cream(Animal_products):
         return self.__quantity
 
     def __str__(self):
-        return super().__str__() + f'[+] Quantity: {self.__quantity}'
+        return super().__str__() + f'[+] Quantity: {self.__quantity}kg'

@@ -1,8 +1,8 @@
 from .item import Item
 
 
-class fruits_and_vegetables(Item):
-    def __init__(self, name: str, price: float, IBAN: int, packing_date: str, expiration_date: str, bio: bool = False):
+class Fruits_and_vegetables(Item):
+    def __init__(self, name: str, price: float, IBAN: int, packing_date: str, expiration_date: str, bio: bool = True):
         super().__init__(name, price, IBAN)
         self.__packing_date = packing_date
         self.__expiration_date = expiration_date

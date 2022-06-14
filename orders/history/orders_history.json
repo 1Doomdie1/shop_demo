@@ -1,31 +1,104 @@
 [
- {
-  "Client ID": 1234,
-  "Orders": [
-   {
-    "Order ID": 115621424357,
-    "Name": "Doomdie",
-    "Address": {
-     "City/Town": "London",
-     "Postcode": 12345,
-     "Street Name": "London Bridge",
-     "Street Number": 1,
-     "Block Number": 12,
-     "Floor": 1,
-     "Apartment": 20
-    },
-    "Products": {
-     "Vanila Ice cream": {
-      "qnt": 1,
-      "price": 15
-     },
-     "Milk": {
-      "qnt": 2,
-      "price": 10
-     }
-    },
-    "Total": 35
-   }
-  ]
- }
+  {
+    "Client ID": 61253,
+    "Orders": [
+      {
+        "Order ID": 122247951910,
+        "Name": "Doomdie",
+        "Address": {
+          "City/Town": "London",
+          "Postcode": 12345,
+          "Street Name": "London Bridge",
+          "Street Number": 1,
+          "Block Number": 12,
+          "Floor": 1,
+          "Apartment": 20
+        },
+        "Products": {
+          "Coca-Cola": {
+            "qnt": 1,
+            "price": 3.99
+          },
+          "Chicken Eggs": {
+            "qnt": 1,
+            "price": 4.65
+          },
+          "Rabbit Apples": {
+            "qnt": 1,
+            "price": 2.0
+          },
+          "Milk": {
+            "qnt": 1,
+            "price": 10.0
+          },
+          "Some cigarettes": {
+            "qnt": 1,
+            "price": 15.99
+          },
+          "Napolact Cheese": {
+            "qnt": 1,
+            "price": 3.25
+          },
+          "Vanilla Ice cream": {
+            "qnt": 1,
+            "price": 15.0
+          },
+          "Chicken Breast": {
+            "qnt": 1,
+            "price": 14.99
+          },
+          "French Bread": {
+            "qnt": 1,
+            "price": 3.5
+          },
+          "Whiskey": {
+            "qnt": 1,
+            "price": 20.0
+          }
+        },
+        "Total": 93.37
+      }
+    ]
+  },
+  {
+    "Client ID": 1234,
+    "Orders": [
+      {
+        "Order ID": 122247951916,
+        "Name": "Doomdie",
+        "Address": {
+          "City/Town": "London",
+          "Postcode": 12345,
+          "Street Name": "London Bridge",
+          "Street Number": 1,
+          "Block Number": 12,
+          "Floor": 1,
+          "Apartment": 20
+        },
+        "Products": {
+          "Coca-Cola": {
+            "qnt": 1,
+            "price": 3.99
+          },
+          "Rabbit Apples": {
+            "qnt": 1,
+            "price": 2.0
+          },
+          "Some cigarettes": {
+            "qnt": 1,
+            "price": 15.99
+          },
+          "French Bread": {
+            "qnt": 1,
+            "price": 3.5
+          },
+          "Whiskey": {
+            "qnt": 1,
+            "price": 20.0
+          }
+        },
+        "Total": 45.48
+      }
+    ]
+  }
 ]

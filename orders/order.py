@@ -15,7 +15,7 @@ class Order:
             else:
                 data.append(order_data)
             history_file.seek(0)
-            json.dump(data, history_file, indent=1)
+            json.dump(data, history_file, indent=2)
 
     def __check_client_old_orders(self, orders):
         for order in orders:
