@@ -1,4 +1,5 @@
 import json
+import base64
 
 
 class Order:
@@ -23,6 +24,9 @@ class Order:
                 return True, orders.index(order)
         return False, None
 
+    def __encode_dict(self, data):
+        return base64.b64encode(str(data).encode('utf-8')).decode('utf-8')
+
     def get_client_data(self):
         return self.__client_data
 
@@ -34,7 +38,12 @@ class Order:
 
     def archive_order(self):
         order_ID = hash(self)
-        order_data = {"Client ID": self.__client_data.get_id(), "Orders": [{"Order ID": order_ID, "Name": self.__client_data.get_name(), "Address": self.__client_data.get_address(), "Products": self.get_bucket_list(), "Total": self.total_cost()}]}
+        order_data = {"Client ID": self.__client_data.get_id(), 
+                      "Orders": [{"Order ID": order_ID, 
+                                  "Name": self.__client_data.get_name(), 
+                                  "Address": self.__client_data.get_address(), 
+                                  "Products": self.__encode_dict(self.get_bucket_list()), 
+                                  "Total": self.total_cost()}]}
         self.__save_order(order_data)
 
     def __str__(self):

@@ -3,7 +3,7 @@
     "Client ID": 61253,
     "Orders": [
       {
-        "Order ID": 122247951910,
+        "Order ID": 120623077121,
         "Name": "Doomdie",
         "Address": {
           "City/Town": "London",
@@ -14,48 +14,7 @@
           "Floor": 1,
           "Apartment": 20
         },
-        "Products": {
-          "Coca-Cola": {
-            "qnt": 1,
-            "price": 3.99
-          },
-          "Chicken Eggs": {
-            "qnt": 1,
-            "price": 4.65
-          },
-          "Rabbit Apples": {
-            "qnt": 1,
-            "price": 2.0
-          },
-          "Milk": {
-            "qnt": 1,
-            "price": 10.0
-          },
-          "Some cigarettes": {
-            "qnt": 1,
-            "price": 15.99
-          },
-          "Napolact Cheese": {
-            "qnt": 1,
-            "price": 3.25
-          },
-          "Vanilla Ice cream": {
-            "qnt": 1,
-            "price": 15.0
-          },
-          "Chicken Breast": {
-            "qnt": 1,
-            "price": 14.99
-          },
-          "French Bread": {
-            "qnt": 1,
-            "price": 3.5
-          },
-          "Whiskey": {
-            "qnt": 1,
-            "price": 20.0
-          }
-        },
+        "Products": "eydDb2NhLUNvbGEnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuOTl9LCAnQ2hpY2tlbiBFZ2dzJzogeydxbnQnOiAxLCAncHJpY2UnOiA0LjY1fSwgJ1JhYmJpdCBBcHBsZXMnOiB7J3FudCc6IDEsICdwcmljZSc6IDIuMH0sICdNaWxrJzogeydxbnQnOiAxLCAncHJpY2UnOiAxMC4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnTmFwb2xhY3QgQ2hlZXNlJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjI1fSwgJ1ZhbmlsbGEgSWNlIGNyZWFtJzogeydxbnQnOiAxLCAncHJpY2UnOiAxNS4wfSwgJ0NoaWNrZW4gQnJlYXN0JzogeydxbnQnOiAxLCAncHJpY2UnOiAxNC45OX0sICdGcmVuY2ggQnJlYWQnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuNX0sICdXaGlza2V5JzogeydxbnQnOiAxLCAncHJpY2UnOiAyMC4wfX0=",
         "Total": 93.37
       }
     ]
@@ -64,7 +23,7 @@
     "Client ID": 1234,
     "Orders": [
       {
-        "Order ID": 122247951916,
+        "Order ID": 120623077127,
         "Name": "Doomdie",
         "Address": {
           "City/Town": "London",
@@ -75,28 +34,7 @@
           "Floor": 1,
           "Apartment": 20
         },
-        "Products": {
-          "Coca-Cola": {
-            "qnt": 1,
-            "price": 3.99
-          },
-          "Rabbit Apples": {
-            "qnt": 1,
-            "price": 2.0
-          },
-          "Some cigarettes": {
-            "qnt": 1,
-            "price": 15.99
-          },
-          "French Bread": {
-            "qnt": 1,
-            "price": 3.5
-          },
-          "Whiskey": {
-            "qnt": 1,
-            "price": 20.0
-          }
-        },
+        "Products": "eydDb2NhLUNvbGEnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuOTl9LCAnUmFiYml0IEFwcGxlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMi4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnRnJlbmNoIEJyZWFkJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjV9LCAnV2hpc2tleSc6IHsncW50JzogMSwgJ3ByaWNlJzogMjAuMH19",
         "Total": 45.48
       }
     ]
