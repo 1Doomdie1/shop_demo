@@ -21,4 +21,4 @@ jobs:
           DISCORD_CHANEL: ${{ secrets.DISCORD_CHANEL }}
         run: |
           cd shop_demo
-          python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL $PR_NUMBER $PR_AUTHOR $PR_TITLE
+          python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL $PR_NUMBER $PR_AUTHOR "$PR_TITLE"
