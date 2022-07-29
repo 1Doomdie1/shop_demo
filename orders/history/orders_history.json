@@ -3,7 +3,7 @@
     "Client ID": 61253,
     "Orders": [
       {
-        "Order ID": 120623077121,
+        "Order ID": 97449985739,
         "Name": "Doomdie",
         "Address": {
           "City/Town": "London",
@@ -14,16 +14,52 @@
           "Floor": 1,
           "Apartment": 20
         },
-        "Products": "eydDb2NhLUNvbGEnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuOTl9LCAnQ2hpY2tlbiBFZ2dzJzogeydxbnQnOiAxLCAncHJpY2UnOiA0LjY1fSwgJ1JhYmJpdCBBcHBsZXMnOiB7J3FudCc6IDEsICdwcmljZSc6IDIuMH0sICdNaWxrJzogeydxbnQnOiAxLCAncHJpY2UnOiAxMC4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnTmFwb2xhY3QgQ2hlZXNlJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjI1fSwgJ1ZhbmlsbGEgSWNlIGNyZWFtJzogeydxbnQnOiAxLCAncHJpY2UnOiAxNS4wfSwgJ0NoaWNrZW4gQnJlYXN0JzogeydxbnQnOiAxLCAncHJpY2UnOiAxNC45OX0sICdGcmVuY2ggQnJlYWQnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuNX0sICdXaGlza2V5JzogeydxbnQnOiAxLCAncHJpY2UnOiAyMC4wfX0=",
+        "Products": {
+          "Napolact Cheese": {
+            "qnt": 1,
+            "price": 3.25
+          },
+          "Vanilla Ice cream": {
+            "qnt": 1,
+            "price": 15.0
+          },
+          "Chicken Breast": {
+            "qnt": 1,
+            "price": 14.99
+          },
+          "French Bread": {
+            "qnt": 1,
+            "price": 3.5
+          },
+          "Whiskey": {
+            "qnt": 1,
+            "price": 20.0
+          },
+          "Coca-Cola": {
+            "qnt": 1,
+            "price": 3.99
+          },
+          "Chicken Eggs": {
+            "qnt": 1,
+            "price": 4.65
+          },
+          "Rabbit Apples": {
+            "qnt": 1,
+            "price": 2.0
+          },
+          "Milk": {
+            "qnt": 1,
+            "price": 10.0
+          },
+          "Some cigarettes": {
+            "qnt": 1,
+            "price": 15.99
+          }
+        },
         "Total": 93.37
-      }
-    ]
-  },
-  {
-    "Client ID": 1234,
-    "Orders": [
+      },
       {
-        "Order ID": 120623077127,
+        "Order ID": 138576055588,
         "Name": "Doomdie",
         "Address": {
           "City/Town": "London",
@@ -34,8 +70,15 @@
           "Floor": 1,
           "Apartment": 20
         },
-        "Products": "eydDb2NhLUNvbGEnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuOTl9LCAnUmFiYml0IEFwcGxlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMi4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnRnJlbmNoIEJyZWFkJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjV9LCAnV2hpc2tleSc6IHsncW50JzogMSwgJ3ByaWNlJzogMjAuMH19",
-        "Total": 45.48
+        "Products": "eydGcmVuY2ggQnJlYWQnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuNX0sICdXaGlza2V5JzogeydxbnQnOiAxLCAncHJpY2UnOiAyMC4wfSwgJ0NvY2EtQ29sYSc6IHsncW50JzogMSwgJ3ByaWNlJzogMy45OX0sICdDaGlja2VuIEJyZWFzdCc6IHsncW50JzogMSwgJ3ByaWNlJzogMTQuOTl9LCAnQ2hpY2tlbiBFZ2dzJzogeydxbnQnOiAxLCAncHJpY2UnOiA0LjY1fSwgJ1JhYmJpdCBBcHBsZXMnOiB7J3FudCc6IDEsICdwcmljZSc6IDIuMH0sICdNaWxrJzogeydxbnQnOiAxLCAncHJpY2UnOiAxMC4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnTmFwb2xhY3QgQ2hlZXNlJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjI1fSwgJ1ZhbmlsbGEgSWNlIGNyZWFtJzogeydxbnQnOiAxLCAncHJpY2UnOiAxNS4wfX0=",
+        "Total": 93.37
+      },
+      {
+        "Order ID": 167550684452,
+        "Name": "Doomdie",
+        "Address": "eydDaXR5L1Rvd24nOiAnTG9uZG9uJywgJ1Bvc3Rjb2RlJzogMTIzNDUsICdTdHJlZXQgTmFtZSc6ICdMb25kb24gQnJpZGdlJywgJ1N0cmVldCBOdW1iZXInOiAxLCAnQmxvY2sgTnVtYmVyJzogMTIsICdGbG9vcic6IDEsICdBcGFydG1lbnQnOiAyMH0=",
+        "Products": "eydGcmVuY2ggQnJlYWQnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuNX0sICdXaGlza2V5JzogeydxbnQnOiAxLCAncHJpY2UnOiAyMC4wfSwgJ0NoaWNrZW4gQnJlYXN0JzogeydxbnQnOiAxLCAncHJpY2UnOiAxNC45OX0sICdDb2NhLUNvbGEnOiB7J3FudCc6IDEsICdwcmljZSc6IDMuOTl9LCAnUmFiYml0IEFwcGxlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMi4wfSwgJ0NoaWNrZW4gRWdncyc6IHsncW50JzogMSwgJ3ByaWNlJzogNC42NX0sICdNaWxrJzogeydxbnQnOiAxLCAncHJpY2UnOiAxMC4wfSwgJ1NvbWUgY2lnYXJldHRlcyc6IHsncW50JzogMSwgJ3ByaWNlJzogMTUuOTl9LCAnTmFwb2xhY3QgQ2hlZXNlJzogeydxbnQnOiAxLCAncHJpY2UnOiAzLjI1fSwgJ1ZhbmlsbGEgSWNlIGNyZWFtJzogeydxbnQnOiAxLCAncHJpY2UnOiAxNS4wfX0=",
+        "Total": 93.37
       }
     ]
   }

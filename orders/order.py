@@ -41,7 +41,7 @@ class Order:
         order_data = {"Client ID": self.__client_data.get_id(), 
                       "Orders": [{"Order ID": order_ID, 
                                   "Name": self.__client_data.get_name(), 
-                                  "Address": self.__client_data.get_address(), 
+                                  "Address": self.__encode_dict((self.__client_data.get_address())), 
                                   "Products": self.__encode_dict(self.get_bucket_list()), 
                                   "Total": self.total_cost()}]}
         self.__save_order(order_data)
