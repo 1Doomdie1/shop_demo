@@ -1,7 +1,5 @@
 name: Discord PR tracking
-on: 
-  pull_request_target:
-    types: [review_request_removed]
+on: [pull_request_target]
 
 jobs:
   build:
@@ -13,6 +11,7 @@ jobs:
           path: shop_demo
           persist-credentials: false
       - name: Send PR status to Discord
+        if: github.event.review.state == 'approved'
         env:
           PR_TITLE: ${{ github.event.pull_request.title }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
