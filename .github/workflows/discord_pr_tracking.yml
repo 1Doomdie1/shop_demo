@@ -1,7 +1,5 @@
 name: Discord PR tracking
-on:
-  pull_request_target:
-    types: [review_requested]
+on: [pull_request_review]
 
 jobs:
   build:
