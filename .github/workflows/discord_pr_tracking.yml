@@ -14,10 +14,10 @@ jobs:
           persist-credentials: false
       - name: Send PR status to Discord
       env:
+        PR_TITLE: ${{ github.event.pull_request.title }}
         PR_NUMBER: ${{ github.event.pull_request.number }}
         PR_AUTHOR: ${{ github.event.pull_request.user.login }}
         DISCORD_TOKEN: ${{ secret.DISCORD_TOKEN }}
         DISCORD_CHANEL: ${{ secret.DISCORD_CHANEL }}
       run: |
-        cd ivy/automation_tools/tools/pr_discord_tracking
-        python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL
+        python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL $PR_NUMBER $PR_AUTHOR $PR_TITLE
