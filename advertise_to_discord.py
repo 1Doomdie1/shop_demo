@@ -1,7 +1,14 @@
-from os import argv
+import requests
+from sys import argv
 
-print(argv[1])
-print(argv[2])
-print(argv[3])
-print(argv[4])
-print(argv[5])
+
+# PR_TITLE = argv[5]
+# PR_AUTHOR = argv[4]
+# PR_NUMBER = argv[3]
+# DISCORD_CHANEL = argv[2]
+# DISCORD_TOKEN = argv[1]
+
+print(argv)
+# data = {"content": f"PR: {PR_TITLE}\nLINK: https://github.com/unifyai/ivy/pull/{PR_NUMBER}\nAUTHOR:{PR_AUTHOR}\nSTATUS: reviewed"}
+# header = {"authorization": DISCORD_TOKEN}
+# requests.post(DISCORD_CHANEL, data=data, headers=header)

@@ -1,7 +1,5 @@
 name: Discord PR tracking
-on:
-  pull_request_target:
-    types: [opened]
+on: [pull_request_review]
 
 jobs:
   build:
@@ -20,5 +18,5 @@ jobs:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_CHANEL: ${{ secrets.DISCORD_CHANEL }}
         run: |
-          ls
-          python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL $PR_NUMBER $PR_AUTHOR $PR_TITLE
+          cd shop_demo
+          python3 advertise_to_discord.py $DISCORD_TOKEN $DISCORD_CHANEL $PR_NUMBER $PR_AUTHOR "$PR_TITLE"
