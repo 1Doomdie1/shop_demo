@@ -1,5 +1,6 @@
 *.txt
 test.py
+.vscode
 __pycache__
 orders/__pycache__
 clients/__pycache__

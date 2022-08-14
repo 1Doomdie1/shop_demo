@@ -1,13 +1,16 @@
 import json
 import base64
-
+from clients.address import Address
+from orders.bucket_list import Bucket_list
 
 class Order:
-    def __init__(self, client_data, bucket_list):
+    '''Creates an order with the client's address and bucket list objects'''
+    def __init__(self, client_data:Address, bucket_list:Bucket_list):
         self.__client_data = client_data
         self.__bucket_list = bucket_list
 
     def __save_order(self, order_data):
+        '''Saves an order to orders_history.json by passing a order_data tuple'''
         with open('orders/history/orders_history.json', 'r+') as history_file:
             data = json.load(history_file)
             has_older_order, order_index = self.__check_client_old_orders(data)
@@ -18,25 +21,31 @@ class Order:
             history_file.seek(0)
             json.dump(data, history_file, indent=2)
 
-    def __check_client_old_orders(self, orders):
+    def __check_client_old_orders(self, orders:json):
+        '''Checks if a client has older orders by passing all previous orders as a json dump'''
         for order in orders:
             if order["Client ID"] == self.__client_data.get_id():
                 return True, orders.index(order)
         return False, None
 
-    def __encode_dict(self, data):
+    def __encode_dict(self, data:dict):
+        '''Returns a base64 encoded dictionary'''
         return base64.b64encode(str(data).encode('utf-8')).decode('utf-8')
 
     def get_client_data(self):
+        '''Returns the client information object'''
         return self.__client_data
 
     def get_bucket_list(self):
+        '''Returns the client bucket list as a tuple'''
         return self.__bucket_list.get_lst()
 
     def total_cost(self):
+        '''Returns the client bucket list total cost'''
         return self.__bucket_list.cost()
 
     def archive_order(self):
+        '''Saves the order object to orders_history.json'''
         order_ID = hash(self)
         order_data = {"Client ID": self.__client_data.get_id(), 
                       "Orders": [{"Order ID": order_ID, 
