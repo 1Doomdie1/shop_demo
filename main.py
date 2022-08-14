@@ -21,22 +21,18 @@ def main():
     apples = Fruits_and_vegetables('Rabbit Apples', 2.0, 8290, '09.12.2022', '15.12.2022')
     cigarettes = Tabaco('Some cigarettes', 15.99, 9836, 9)
 
-    cl1_products = [chicken_breast, eggs, milk, cheese, ice_cream, bread, whiskey, cola, apples, cigarettes]
-    # cl2_products = [bread, whiskey, whiskey, cola, apples, cigarettes]
+    # cl1_products = [chicken_breast, eggs, milk, cheese, ice_cream, bread, whiskey, cola, apples, cigarettes]
+    cl2_products = [bread, whiskey, whiskey, cola, apples, cigarettes]
 
-    cl1_bucket_lst = Bucket_list(cl1_products)
-    # cl2_bucket_lst = Bucket_list(cl2_products)
+    # cl1_bucket_lst = Bucket_list(cl1_products)
+    cl2_bucket_lst = Bucket_list(cl2_products)
 
-    cl1_order = Order(cl1, cl1_bucket_lst)
-    # cl2_order = Order(cl2, cl2_bucket_lst)
+    # cl1_order = Order(cl1, cl1_bucket_lst)
+    cl2_order = Order(cl2, cl2_bucket_lst)
 
     # print(cl1_order)
-    cl1_order.archive_order()
-    # cl2_order.archive_order()
-
-    # print(milk)
-    # print()
-    # print(cl2_order)
+    # cl1_order.archive_order()
+    cl2_order.archive_order()
 
 
 if __name__ == '__main__':
