@@ -4,4 +4,5 @@ test.py
 __pycache__
 orders/__pycache__
 clients/__pycache__
+database/__pycache__
 products_categories/__pycache__
