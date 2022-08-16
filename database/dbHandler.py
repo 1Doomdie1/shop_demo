@@ -31,7 +31,7 @@ class DBHandler():
         self.cnx = mysql.connector.connect(user=self.__user, password=self.__password, host=self.__host, database=self.__database_name)
         self.cursor = self.cnx.cursor()
     
-    def disconect(self):
+    def disconnect(self):
         '''Disconnects form database and distroyes cursor'''
         self.cnx.close()
         self.cursor.close()

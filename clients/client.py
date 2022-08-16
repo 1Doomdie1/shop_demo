@@ -21,7 +21,14 @@ class Client():
     def get_address(self):
         '''Returns client's address as Address class object'''
         return self.__address.get_address_data()
+    
+    def get_address_obj(self):
+        return self.__address
 
+    def get_client_data(self):
+        '''Returns client's data (id, name, address) as a dictionary'''
+        return {'ID': self.__id, 'name':self.__name, 'address':self.__address.get_address_data()}
+    
     def __str__(self):
         return f'[+] ID: {self.__id}\n'\
                 f'[+] Name: {self.__name}\n'\

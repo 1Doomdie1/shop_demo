@@ -1,12 +1,12 @@
 import json
 import base64
 from time import time
-from clients.address import Address
-from orders.bucket_list import Bucket_list
+from clients.client import Client
+from orders.bucket_list import Bucketlist
 
 class Order:
     '''Creates an order with the client's address and bucket list objects'''
-    def __init__(self, client_data:Address, bucket_list:Bucket_list):
+    def __init__(self, client_data:Client, bucket_list:Bucketlist):
         self.__client_data = client_data
         self.__bucket_list = bucket_list
 
@@ -42,7 +42,7 @@ class Order:
         return self.__bucket_list.get_lst()
 
     def total_cost(self):
-        '''Returns the client bucket list total cost'''
+        '''Returns the client bucketlist total cost'''
         return self.__bucket_list.cost()
 
     def archive_order(self):

@@ -16,6 +16,9 @@ class Item():
     def get_IBAN(self):
         '''Returns the product IBAN'''
         return self.__IBAN
+    
+    def get_item_data(self):
+        return {'name': self.__name, 'price':self.__price, 'IBAN': self.__IBAN}
 
     def __str__(self):
         return f'[+] Name: {self.__name}\n'\

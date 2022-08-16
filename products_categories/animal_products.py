@@ -1,5 +1,5 @@
 from .item import Item
-
+from datetime import datetime
 
 class Animal_products(Item):
     '''
@@ -9,11 +9,19 @@ class Animal_products(Item):
     '''
     def __init__(self, name: str, price: float, IBAN: int, expiration_date: str):
         super().__init__(name, price, IBAN)
-        self.__expiration_date = expiration_date
+        self.__expiration_date = datetime.strptime(expiration_date, "%d/%m/%Y").date()
+        self.__data = {'expiration date': self.__expiration_date}
+
+    def __set_product_data__(self, child_data: dict):
+        self.__data = {**self.__data, **child_data}
 
     def get_expiration_date(self):
         '''Returns the expiration date the product.'''
         return self.__expiration_date
+
+    def get_product_data(self):
+        '''Returns a dictionary contaning product related'''
+        return {**super().get_item_data(), **self.__data}
 
     def __str__(self):
         return super().__str__() + f'[+] Expiration date: {self.__expiration_date}\n'
@@ -26,6 +34,7 @@ class Meat(Animal_products):
     '''
     def __init__(self, name: str, price: float, IBAN: int, quantity: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
+        super().__set_product_data__({'quantity':quantity})
         self.__quantity = quantity
 
     def get_qunatity(self):
@@ -43,6 +52,7 @@ class Eggs(Animal_products):
     '''
     def __init__(self, name: str, price: float, IBAN: int, inc_type: str, box_size: int, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
+        super().__set_product_data__({'incubation type':inc_type, 'box size':box_size})
         self.__inc_type = inc_type
         self.__box_size = box_size
 
@@ -66,6 +76,7 @@ class Milk(Animal_products):
     '''
     def __init__(self, name: str, price: float, IBAN: int, quantity: float, fatness: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
+        super().__set_product_data__({'quantity':quantity, 'fatness':fatness})
         self.__quantity = quantity
         self.__fatness = fatness
 
@@ -89,6 +100,7 @@ class Cheese(Animal_products):
     '''
     def __init__(self, name: str, price: float, IBAN: int, quantity: float, fatness: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
+        super().__set_product_data__({'quantity':quantity, 'fatness':fatness})
         self.__quantity = quantity
         self.__fatness = fatness
 
@@ -112,6 +124,7 @@ class Ice_cream(Animal_products):
     '''
     def __init__(self, name: str, price: float, IBAN: int, quantity: float, expiration_date: str):
         super().__init__(name, price, IBAN, expiration_date)
+        super().__set_product_data__({'quantity':quantity})
         self.__quantity = quantity
 
     def get_qunatity(self):
